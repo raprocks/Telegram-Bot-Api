@@ -7,5 +7,7 @@ class User:
         self.username: str = user_data.get('username', None)
         self.language_code: str = user_data.get('language_code', None)
         self.can_join_groups: bool = user_data.get('can_join_groups', None)
-        self.can_read_all_group_messages: bool = user_data.get('can_read_all_group_messages', None)
-        self.supports_inline_queries: bool = user_data.get('supports_inline_queries', None)
+        self.can_read_all_group_messages: bool = user_data.get(
+            'can_read_all_group_messages', None)
+        self.supports_inline_queries: bool = user_data.get(
+            'supports_inline_queries', None)
