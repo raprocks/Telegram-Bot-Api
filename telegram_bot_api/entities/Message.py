@@ -1,5 +1,5 @@
-from Chat import Chat, Dict
-from User import User
+from .Chat import Chat, Dict
+from .User import User
 from typing import Optional, List
 
 

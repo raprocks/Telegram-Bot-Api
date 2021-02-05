@@ -4,6 +4,7 @@ from .ChatPermissions import ChatPermissions
 from .Message import Message
 from .ChatLocation import ChatLocation
 
+
 class Chat:
     def __init__(self, chat_data: Dict):
         self.id: int = chat_data['id']
@@ -25,5 +26,6 @@ class Chat:
             'sticker_set_name', None)
         self.can_set_sticker_set: Optional[bool] = chat_data.get(
             'can_set_sticker_set', None)
-        self.linked_chat_id: Optional[int] = chat_data.get('linked_chat_id', None)
+        self.linked_chat_id: Optional[int] = chat_data.get(
+            'linked_chat_id', None)
         self.location: Optional[ChatLocation] = chat_data.get('location', None)
