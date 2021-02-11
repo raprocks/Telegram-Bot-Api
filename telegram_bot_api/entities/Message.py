@@ -1,5 +1,15 @@
 from .Chat import Chat, Dict
 from .User import User
+from .MessageEntity import MessageEntity
+from .Animation import Animation
+from .Audio import Audio
+from .Document import Document
+from .PhotoSize import PhotoSize
+from .Poll import Poll
+from .VideoNote import VideoNote
+from .Voice import Voice
+from .Location import Location
+from .Video import Video
 from typing import Optional, List
 
 

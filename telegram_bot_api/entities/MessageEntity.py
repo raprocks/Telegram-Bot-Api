@@ -2,9 +2,9 @@ from typing import Dict, Optional
 from .User import User
 
 
-class Dict:
+class MessageEntity:
     def __init__(self, entity_data: Dict):
-        self.type: str = entity_data.get('type')
+        self.entity_type: str = entity_data.get('type', '')
         self.offset: int = entity_data['offset']
         self.length: int = entity_data['length']
         self.url: Optional[str] = entity_data.get('url')
