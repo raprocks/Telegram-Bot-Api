@@ -1,4 +1,5 @@
-from typing import Dict, Optional
+from typing import Dict
+
 
 class Dice:
     def __init__(self, dice_data: Dict):

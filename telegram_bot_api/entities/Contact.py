@@ -1,5 +1,6 @@
 from typing import Dict, Optional
 
+
 class Contact:
     def __init__(self, contact_data: Dict):
         self.phone_number: str = contact_data['phone_number']

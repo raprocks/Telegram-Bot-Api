@@ -1,6 +1,5 @@
 from typing import Dict, Optional
 from ..base_objects.File import File
-# from telegram_bot_api.base_objects.File import File
 
 
 class PhotoSize(File):
