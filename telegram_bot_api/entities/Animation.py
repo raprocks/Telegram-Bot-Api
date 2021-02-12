@@ -11,6 +11,7 @@ class Animation(File):
         self.duration: int = animation_data['duration']
         self.thumb: Optional[PhotoSize] = PhotoSize(
             animation_data.get('thumb', {}))
-        self.file_name: Optional[str] = animation_data.get('file_name')
-        self.mime_type: Optional[str] = animation_data.get('mime_type')
-        self.file_size: Optional[int] = animation_data.get('file_size')
+        self.file_name: Optional[str] = str(
+            animation_data.get('file_name', ''))
+        self.mime_type: Optional[str] = str(animation_data.get('mime_type'))
+        self.file_size: Optional[int] = animation_data.get('file_size', 0)
